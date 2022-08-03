@@ -10,7 +10,7 @@ export interface Card {
   description: string;
   url: string;
   ts: number;
-  id: string;
+  id: number;
 }
 
 interface CardsProps {
