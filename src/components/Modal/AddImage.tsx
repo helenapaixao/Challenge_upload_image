@@ -31,7 +31,12 @@ export function ModalAddImage({
         <ModalCloseButton />
 
         <ModalBody px={60}>
-          <FormAddImage closeModal={handleCloseModal} />
+          <FormAddImage
+            closeModal={handleCloseModal}
+            title=""
+            description=""
+            url=""
+          />
         </ModalBody>
       </ModalContent>
     </Modal>
