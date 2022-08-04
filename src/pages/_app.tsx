@@ -8,13 +8,11 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   const queryClient = new QueryClient();
 
   return (
-    <>
-      <ChakraProvider resetCSS theme={theme}>
-        <QueryClientProvider client={queryClient}>
-          <Component {...pageProps} />
-        </QueryClientProvider>
-      </ChakraProvider>
-    </>
+    <ChakraProvider resetCSS theme={theme}>
+      <QueryClientProvider client={queryClient}>
+        <Component {...pageProps} />
+      </QueryClientProvider>
+    </ChakraProvider>
   );
 }
 
